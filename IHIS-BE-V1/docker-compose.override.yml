@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ihis-be-v1:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

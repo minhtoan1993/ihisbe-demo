@@ -1,0 +1,18 @@
+name: dockercompose4206982985064713503
+services:
+  ihis-be-v1:
+    build:
+      context: D:\IHIS_BE\IHIS-BE-V1
+      dockerfile: IHIS-BE-V1/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ihisbev1
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose4206982985064713503_default

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ihis-be-v1:
+    image: ${DOCKER_REGISTRY-}ihisbev1
+    build:
+      context: .
+      dockerfile: IHIS-BE-V1/Dockerfile
